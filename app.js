@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // Initialize view engine
-app.use('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
